@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    console.log("EJERCICIO NUMERO CUATRO");
+    let nombreUsuario = prompt("Cuál es tu nombre?");
+    let edadUsuario = parseInt(prompt("Cuál es tu edad?"));
+    let esEstudiante = prompt("¿Eres un estudiante? (sí/no)").toLowerCase() === "sí";
+
+    let mensaje = `Hola, ${nombreUsuario}.`;
+    mensaje += ` Tienes ${edadUsuario} años.`;
+
+    if (edadUsuario >= 18) {
+        mensaje += " Eres mayor de edad.";
+    } else {
+    mensaje += " Eres menor de edad.";
+    }
+    if (esEstudiante) {
+        mensaje += " Tienes derecho a un descuento por ser estudiante.";
+    }
+    console.log(mensaje);
+    </script>
+</body>
+</html>
