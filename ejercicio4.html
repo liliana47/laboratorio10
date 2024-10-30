@@ -12,16 +12,16 @@
     let edadUsuario = parseInt(prompt("Cuál es tu edad?"));
     let esEstudiante = prompt("¿Eres un estudiante? (sí/no)").toLowerCase() === "sí";
 
-    let mensaje = `Hola, ${nombreUsuario}.`;
-    mensaje += ` Tienes ${edadUsuario} años.`;
+    let mensaje = `Hola, ${nombreUsuario}`;
+    mensaje += ` Tienes ${edadUsuario} años`;
 
     if (edadUsuario >= 18) {
-        mensaje += " Eres mayor de edad.";
+        mensaje += " Eres mayor de edad";
     } else {
-    mensaje += " Eres menor de edad.";
+    mensaje += " Eres menor de edad";
     }
     if (esEstudiante) {
-        mensaje += " Tienes derecho a un descuento por ser estudiante.";
+        mensaje += " Usted tiene derecho a un descuento por ser estudiante";
     }
     console.log(mensaje);
     </script>
